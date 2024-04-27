@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to javascript</h1>
+
+    <script>
+
+        var greet = () => document.write("Hello World!!" + "<br>")
+
+        greet()
+
+        var greetUser2 = uname => document.write("Hello " + uname + "!" + "<br>")
+
+        greetUser2("Pranali")
+
+        var add2 = (x,y) => x+y
+
+        document.write("Sum is" + add2(5,5) + "<br>")
+
+        function strOp(str){
+            document.write(str.toUpperCase() + "! <br>")
+            document.write(str.charAt(4) + "! <br>")
+            document.write(str.indexOf(o) + "! <br>")
+            document.write(str.slice(0,1) + "! <br>")
+        }
+
+        //lambda
+
+        var strOp2 = str => {
+            document.write(str.toUpperCase() + "! <br>")
+            document.write(str.charAt(4) + "! <br>")
+            document.write(str.indexOf(o) + "! <br>")
+            document.write(str.slice(0,1) + "! <br>")
+        }
+
+    </script>
+</body>
+</html>

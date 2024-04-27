@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function showPosition(position){
+            var lat = position.coords.latitude
+            var long = position.coords.longitude
+
+            document.getElementById("s1").innerHTML = "Latitude " + lat + " Longitude " + long
+        }
+        function f1(){
+            // step-1 : Obtain geolocation object
+           var geolocation = navigator.geolocation
+
+           //step-2:
+
+           geolocation.getCurrentPosition(showPosition,)
+        }
+    </script>
+</head>
+<body>
+    <button onclick="f1()">Get Coordinates</button>
+    <span id="s1"></span>
+</body>
+</html>
